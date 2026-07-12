@@ -1,6 +1,6 @@
 <?php
 // Configurações da página
-$vsl_url = "https://rocco.vivalis.fit/tk=smaow929as9";
+$vsl_url = "https://rocco.vivalis.fit?tk=smaow929as9";
 $query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
 if (!empty($query_string)) {
     $separator = (strpos($vsl_url, '?') !== false) ? '&' : '?';
