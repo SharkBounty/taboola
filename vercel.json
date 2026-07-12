@@ -1,0 +1,33 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.4"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/politica-de-privacidade",
+      "destination": "/api/politica-de-privacidade.php"
+    },
+    {
+      "source": "/termos-e-condicoes",
+      "destination": "/api/termos-e-condicoes.php"
+    },
+    {
+      "source": "/sobre-nos",
+      "destination": "/api/sobre-nos.php"
+    },
+    {
+      "source": "/publicidade",
+      "destination": "/api/publicidade.php"
+    },
+    {
+      "source": "/recetas",
+      "destination": "/api/recetas.php"
+    },
+    {
+      "source": "/",
+      "destination": "/api/index.php"
+    }
+  ]
+}
