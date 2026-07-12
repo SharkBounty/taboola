@@ -1,8 +1,13 @@
 <?php
 // Configurações da página
-$vsl_url = "https://metodoitaliano.com/vsl"; // Substitua pela URL da sua VSL ou checkout
-$query_string = !empty($_SERVER['QUERY_STRING']) ? '?' . $_SERVER['QUERY_STRING'] : '';
-$final_link = $vsl_url . $query_string;
+$vsl_url = "https://rocco.vivalis.fit/tk=smaow929as9";
+$query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
+if (!empty($query_string)) {
+    $separator = (strpos($vsl_url, '?') !== false) ? '&' : '?';
+    $final_link = $vsl_url . $separator . $query_string;
+} else {
+    $final_link = $vsl_url;
+}
 ?>
 <!doctype html>
 <html lang="pt-PT">
