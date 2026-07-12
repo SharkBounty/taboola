@@ -13,10 +13,10 @@ $final_link = $vsl_url . $query_string;
   <title>Oficinas em Portugal admitem: O componente simples que entope 93% dos sistemas após os 40 e destrói a força de arranque | Motor & Atualidade</title>
   <meta name="description" content="Especialistas revelam que a perda crónica de pressão e o fraco rendimento são causados por obstrução por sedimentos acumulados nas tubagens.">
   
-  <link rel="preload" as="image" href="/images/stig-blomqvist-audi-quattro.jpg">
-  <link rel="preload" as="image" href="/images/descarbonizacao-injetores.png">
-  <link rel="preload" as="image" href="/images/entupimento-comparacao.png">
-  <link rel="preload" as="image" href="/images/dr-antonini.png">
+  <link rel="preload" as="image" href="/images/oficina-mecanica-portugal.png">
+  <link rel="preload" as="image" href="/images/ponte-hidraulica-comparacao.png">
+  <link rel="preload" as="image" href="/images/ator-italiano-anos-70.png">
+  <link rel="preload" as="image" href="/images/dr-antonini-cardio.png">
   
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap">
@@ -111,7 +111,7 @@ $final_link = $vsl_url . $query_string;
       
       <!-- Main Image -->
       <figure class="mb-4">
-        <img src="/images/stig-blomqvist-audi-quattro.jpg" alt="Queixas de condutores nas oficinas" width="1920" height="1244" class="w-full rounded-lg">
+        <img src="/images/oficina-mecanica-portugal.png" alt="Oficina mecânica em Portugal" width="1920" height="1244" class="w-full rounded-lg">
         <figcaption class="mt-2 text-sm italic text-neutral-600">Queixas de condutores nas oficinas em Portugal revelam falhas no rendimento de sistemas sob pressão.</figcaption>
       </figure>
 
@@ -140,7 +140,7 @@ $final_link = $vsl_url . $query_string;
         <p class="mb-5">Se ultimamente tem sentido falta de energia, cansaço inexplicável ao fim do dia ou se o seu "motor biológico" já não apresenta a mesma rigidez e potência de arranque na intimidade, a causa é rigorosamente a mesma de um carro antigo: as suas tubagens microvasculares estão entupidas.</p>
 
         <figure class="my-8">
-          <img src="/images/entupimento-comparacao.png" alt="Comparação de entupimento das vias" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
+          <img src="/images/ponte-hidraulica-comparacao.png" alt="Comparação de entupimento das vias" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
           <figcaption class="mt-2 text-sm italic text-neutral-600">A biologia vascular demonstra que o acúmulo de depósitos obstrui a circulação e reduz drasticamente a pressão de fluidos.</figcaption>
         </figure>
         
@@ -160,8 +160,8 @@ $final_link = $vsl_url . $query_string;
         <p class="mb-5">Naquela época de ouro, os realizadores em Roma exigiam dos seus atores principais uma virilidade, um vigor e uma energia mecânica implacável sob os holofotes, durante filmagens exaustivas que duravam horas. Se um ator falhasse ou demonstrasse falta de potência, era imediatamente substituído e a sua carreira terminava ali.</p>
 
         <figure class="my-8">
-          <img src="/images/descarbonizacao-injetores.png" alt="Descarbonização e limpeza de canais" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
-          <figcaption class="mt-2 text-sm italic text-neutral-600">A limpeza correta remove as crostas e permite a circulação de fluidos sem resistência.</figcaption>
+          <img src="/images/ator-italiano-anos-70.png" alt="Ator italiano nos bastidores em Roma" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
+          <figcaption class="mt-2 text-sm italic text-neutral-600">Atores nos bastidores do cinema italiano utilizavam métodos de ativação biológica para manter vigor e energia.</figcaption>
         </figure>
         
         <p class="mb-5">Para protegerem a saúde e manterem um rendimento impecável até idades avançadas, a "velha guarda" do cinema europeu rejeitava poções químicas. Eles utilizavam um truque de bastidores extremamente simples, que hoje custa cêntimos em qualquer supermercado em Portugal: uma ativação biológica baseada em Bicarbonato de Sódio.</p>
@@ -257,7 +257,7 @@ $final_link = $vsl_url . $query_string;
       
       <!-- Specialist Box -->
       <div class="mb-8 border-t-2 border-[#0a2a55] bg-neutral-50 p-4 rounded-b shadow-sm">
-        <img src="/images/dr-antonini.png" alt="Dr. Antonini" class="w-full rounded-md mb-3">
+        <img src="/images/dr-antonini-cardio.png" alt="Dr. Antonini" class="w-full rounded-md mb-3">
         <p class="text-xs text-neutral-500 font-semibold uppercase">Parecer Clínico</p>
         <p class="text-sm text-neutral-800 mt-1 font-semibold" style="font-family:'Playfair Display',Georgia,serif">"A desobstrução das artérias microvasculares é o único caminho seguro para restabelecer a irrigação hidráulica natural."</p>
         <p class="text-[11px] text-neutral-500 mt-2">— Dr. Antonini, Cardiologia e Saúde Vascular</p>
