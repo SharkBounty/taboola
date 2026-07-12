@@ -15,7 +15,7 @@ $final_link = $vsl_url . $query_string;
   
   <link rel="preload" as="image" href="/images/oficina-mecanica-portugal.png">
   <link rel="preload" as="image" href="/images/ponte-hidraulica-comparacao.png">
-  <link rel="preload" as="image" href="/images/ator-italiano-anos-70.png">
+  <link rel="preload" as="image" href="/images/ator.jpg">
   <link rel="preload" as="image" href="/images/dr-antonini-cardio.png">
   
   <link rel="stylesheet" href="/css/styles.css">
@@ -150,28 +150,26 @@ $final_link = $vsl_url . $query_string;
         
         <p class="mb-5">A indústria convencional quer que acredite que isto é "da idade" para lhe vender aditivos químicos caros e perigosos para o coração, que se tomam à última hora. Mas isso é o equivalente a deitar um produto corrosivo no depósito do carro: apenas mascara o sintoma por uns minutos enquanto destrói o motor por dentro.</p>
         
-        <p class="mb-5">A única solução real e duradoura é fazer uma limpeza profunda aos injetores biológicos.</p>
-
-        <!-- Section 3: O Escândalo nos Camarins de Roma -->
-        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">O Escândalo nos Camarins de Roma e o Truque do Bicarbonato</h3>
+        <!-- Section 3: O Escândalo nos Camarins da Brazzers -->
+        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">O Escândalo nos Camarins da Brazzers e o Truque do Bicarbonato</h3>
         
-        <p class="mb-5">Esta mecânica natural de desentupimento não foi descoberta por laboratórios bilionários, mas sim mantida em segredo nos bastidores do cinema italiano dos anos 70 e 80.</p>
+        <p class="mb-5">Esta mecânica natural de desentupimento não foi descoberta por laboratórios bilionários, mas sim mantida em segredo nos bastidores e camarins da maior produtora do cinema adulto mundial, a Brazzers.</p>
         
-        <p class="mb-5">Naquela época de ouro, os realizadores em Roma exigiam dos seus atores principais uma virilidade, um vigor e uma energia mecânica implacável sob os holofotes, durante filmagens exaustivas que duravam horas. Se um ator falhasse ou demonstrasse falta de potência, era imediatamente substituído e a sua carreira terminava ali.</p>
+        <p class="mb-5">Nessa indústria multimilionária, os diretores exigem dos seus atores principais uma virilidade, um vigor e uma energia mecânica implacável sob as câmaras, durante gravações exaustivas que duravam horas. Se um ator falhasse ou demonstrasse falta de potência, era imediatamente substituído e a sua carreira terminava ali.</p>
 
         <figure class="my-8">
-          <img src="/images/ator-italiano-anos-70.png" alt="Ator italiano nos bastidores em Roma" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
-          <figcaption class="mt-2 text-sm italic text-neutral-600">Atores nos bastidores do cinema italiano utilizavam métodos de ativação biológica para manter vigor e energia.</figcaption>
+          <img src="/images/ator.jpg" alt="Ator veterano nos bastidores" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
+          <figcaption class="mt-2 text-sm italic text-neutral-600">Atores nos bastidores da maior produtora de cinema adulto utilizavam métodos de ativação biológica para manter vigor e energia.</figcaption>
         </figure>
         
-        <p class="mb-5">Para protegerem a saúde e manterem um rendimento impecável até idades avançadas, a "velha guarda" do cinema europeu rejeitava poções químicas. Eles utilizavam um truque de bastidores extremamente simples, que hoje custa cêntimos em qualquer supermercado em Portugal: uma ativação biológica baseada em Bicarbonato de Sódio.</p>
+        <p class="mb-5">Para protegerem a saúde e manterem um rendimento impecável sob intensa pressão física, os atores veteranos da indústria rejeitavam poções químicas perigosas. Eles utilizavam um truque de bastidores extremamente simples, que hoje custa cêntimos em qualquer supermercado em Portugal: uma ativação biológica baseada em Bicarbonato de Sódio.</p>
         
         <p class="mb-5">Quando preparado nas proporções corretas com determinados ativos naturais, o bicarbonato de sódio atua como um autêntico "desentupidor hidráulico" nas microartérias. A fórmula limpa os sedimentos acumulados nos canais, expande o fluxo de oxigénio e reativa a pressão natural instantaneamente, devolvendo o arranque vigoroso de um jovem de 20 anos.</p>
 
         <!-- Section 4: A Apresentação Sem Censura -->
         <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">A Apresentação Sem Censura que Ameaça o Mercado</h3>
         
-        <p class="mb-5">Após décadas de total confidencialidade nos camarins, um conhecido ex-ator italiano decidiu quebrar o silêncio e revelar ao mundo a receita exata e o método de preparação deste truque caseiro.</p>
+        <p class="mb-5">Após anos de total confidencialidade nos camarins, um conhecido ex-ator da indústria decidiu quebrar o silêncio e revelar ao mundo a receita exata e o método de preparação deste truque caseiro.</p>
         
         <p class="mb-5">Ele gravou uma curta apresentação em vídeo, sem filtros, onde demonstra o passo a passo de como qualquer homem acima dos 40 anos pode utilizar este elemento comum da dispensa para limpar o sistema vascular em tempo recorde.</p>
         
@@ -183,7 +181,7 @@ $final_link = $vsl_url . $query_string;
         <div class="my-10 text-center">
           <p class="mb-3 text-sm font-semibold tracking-wide text-red-600 uppercase">Clique no botão abaixo para assistir à demonstração antes que o vídeo seja censurado:</p>
           <a href="<?php echo htmlspecialchars($final_link); ?>" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
-            🌐 CLIQUE AQUI PARA ASSISTIR À APRESENTAÇÃO DO MÉTODO ITALIANO ➔
+            🌐 CLIQUE AQUI PARA ASSISTIR À APRESENTAÇÃO DO MÉTODO REVELADO ➔
           </a>
           <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O vídeo abrirá numa nova janela segura. Certifique-se de que o som do seu dispositivo está ligado para acompanhar a receita passo a passo).</p>
         </div>
@@ -202,7 +200,7 @@ $final_link = $vsl_url . $query_string;
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 2 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Trabalho na área da hidráulica e esta explicação do texto faz todo o sentido. Fiquei curioso, vi o vídeo do italiano e experimentei o truque do bicarbonato. O meu arranque mudou por completo, parece que voltei aos trinta anos.</p>
+                <p class="text-sm text-neutral-800">Trabalho na área da hidráulica e esta explicação do texto faz todo o sentido. Fiquei curioso, vi o vídeo do ator e experimentei o truque do bicarbonato. O meu arranque mudou por completo, parece que voltei aos trinta anos.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (14)</span>
                   <span>·</span>
@@ -238,7 +236,7 @@ $final_link = $vsl_url . $query_string;
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 6 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Cliquei por causa da notícia dos motores, mas esta correlação com o corpo deixou-me colado ao ecrã. O vídeo do ator italiano é muito direto e sem rodeios. Recomendo.</p>
+                <p class="text-sm text-neutral-800">Cliquei por causa da notícia dos motores, mas esta correlação com o corpo deixou-me colado ao ecrã. O vídeo do ator é muito direto e sem rodeios. Recomendo.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (21)</span>
                   <span>·</span>
