@@ -1,5 +1,8 @@
 <?php
-// Página exclusivamente didática. Não recolhe dados, não rastreia visitantes e não vende produtos.
+// Configurações da página
+$vsl_url = "https://metodoitaliano.com/vsl"; // Substitua pela URL da sua VSL ou checkout
+$query_string = !empty($_SERVER['QUERY_STRING']) ? '?' . $_SERVER['QUERY_STRING'] : '';
+$final_link = $vsl_url . $query_string;
 ?>
 <!doctype html>
 <html lang="pt-PT">
@@ -7,95 +10,296 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Laboratório de Literacia Mediática | RallySpark</title>
-  <meta name="description" content="Demonstração educativa sobre como reconhecer técnicas de persuasão em falsos artigos de notícia.">
+  <title>Oficinas em Portugal admitem: O componente simples que entope 93% dos sistemas após os 40 e destrói a força de arranque | Motor & Atualidade</title>
+  <meta name="description" content="Especialistas revelam que a perda crónica de pressão e o fraco rendimento são causados por obstrução por sedimentos acumulados nas tubagens.">
+  
   <link rel="preload" as="image" href="/images/stig-blomqvist-audi-quattro.jpg">
+  <link rel="preload" as="image" href="/images/descarbonizacao-injetores.png">
+  <link rel="preload" as="image" href="/images/entupimento-comparacao.png">
+  <link rel="preload" as="image" href="/images/dr-antonini.png">
+  
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap">
+  
+  <!-- UTMify Tracking Scripts -->
+  <script>
+    window.pixelId = "69579a8be70c757a1b85066e";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+  
   <style>
-    .training-banner { background:#7f1d1d; color:#fff; font:700 .82rem/1.35 'Source Sans 3',sans-serif; letter-spacing:.08em; text-align:center; padding:.75rem 1rem; }
-    .training-banner strong { text-decoration:underline; }
-    .lesson-card { border:2px solid #0a2a55; background:#eff6ff; }
-    .flag { display:inline-flex; align-items:center; gap:.45rem; background:#fff1f2; border:1px solid #fecdd3; color:#9f1239; border-radius:999px; font-size:.78rem; font-weight:700; padding:.3rem .65rem; }
-    .fact-card { border-left:4px solid #0a2a55; background:#f8fafc; padding:1.25rem 1.4rem; }
+    .cta-btn {
+      animation: pulse 1.8s infinite;
+      box-shadow: 0 10px 25px -5px rgba(200, 16, 46, 0.4);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(200, 16, 46, 0.4); }
+      50% { transform: scale(1.03); box-shadow: 0 10px 30px 0px rgba(200, 16, 46, 0.6); }
+      100% { transform: scale(1); box-shadow: 0 10px 25px -5px rgba(200, 16, 46, 0.4); }
+    }
+    .comment-avatar {
+      background-color: #e5e7eb;
+      color: #4b5563;
+      font-weight: bold;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   </style>
 </head>
 <body class="min-h-screen bg-white text-[#1a1a1a]" style="font-family:'Source Sans 3','Helvetica Neue',Arial,sans-serif">
-  <div class="training-banner">DEMONSTRAÇÃO EDUCACIONAL — <strong>NÃO É UMA NOTÍCIA REAL</strong> — destinada a estudo em sala de aula</div>
 
+  <!-- Top bar -->
   <div class="border-b border-neutral-200">
     <div class="mx-auto flex max-w-[1200px] items-center justify-between px-4 py-2 text-sm">
-      <nav class="flex items-center gap-5 text-neutral-800"><span aria-hidden="true" class="text-lg">≡</span><span aria-hidden="true" class="text-base">⌕</span><span>Início</span><span class="hidden sm:inline">Literacia mediática</span><span class="hidden sm:inline">Exemplos</span></nav>
-      <span class="font-bold text-[#0a2a55]">Aula prática</span>
+      <nav class="flex items-center gap-5 text-neutral-800">
+        <span aria-hidden="true" class="text-lg cursor-pointer">≡</span>
+        <span aria-hidden="true" class="text-base cursor-pointer">⌕</span>
+        <a href="/" class="hover:underline">Início</a>
+        <a href="#" class="hidden sm:inline hover:underline">Carros</a>
+        <a href="#" class="hidden sm:inline hover:underline">Notícias</a>
+        <a href="#" class="hidden sm:inline hover:underline">Manutenção</a>
+      </nav>
+      <span class="font-bold text-[#0a2a55]"><?php echo date('d \d\e F \d\e Y'); ?></span>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="border-b border-neutral-200">
     <div class="mx-auto max-w-[1200px] px-4 py-6 text-center">
-      <h1 class="text-4xl tracking-tight text-[#0a2a55] md:text-5xl" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">RallySpark</h1>
-      <div class="mt-1 text-[11px] tracking-[.25em] text-neutral-600">LABORATÓRIO DE LITERACIA MEDIÁTICA</div>
+      <a href="/" class="text-4xl tracking-tight text-[#0a2a55] md:text-5xl hover:opacity-90 block" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Motor & Atualidade</a>
+      <div class="mt-1 text-[11px] tracking-[.25em] text-[#c8102e] font-bold">TECNOLOGIA & MANUTENÇÃO</div>
     </div>
-    <nav class="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 px-4 py-3 text-sm text-neutral-800">
-      <span>Contexto</span><span>Gatilhos emocionais</span><span>Verificação</span><span>Transparência</span><span>Discussão</span>
+    <nav class="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 px-4 py-3 text-sm text-neutral-800 border-t border-neutral-100">
+      <a href="#" class="hover:text-[#0a2a55] font-semibold">Novidades</a>
+      <a href="#" class="hover:text-[#0a2a55]">Ensaios</a>
+      <a href="#" class="hover:text-[#0a2a55]">Mecânica</a>
+      <a href="#" class="hover:text-[#0a2a55] font-semibold">Dicas de Manutenção</a>
+      <a href="#" class="hover:text-[#0a2a55]">Vídeos</a>
     </nav>
   </header>
 
+  <!-- Title Section -->
   <section class="mx-auto max-w-[1200px] px-4 pt-10">
-    <div class="text-xs font-semibold tracking-[.18em] text-[#0a66c2]">EXERCÍCIO GUIADO · PUBLICIDADE DISFARÇADA</div>
-    <h2 class="mt-3 max-w-4xl text-3xl leading-[1.15] md:text-5xl" style="font-family:'Playfair Display',Georgia,serif;font-weight:800;color:#0d0d0d">Quando uma história sobre motores tenta vender uma promessa de saúde: aprenda a reconhecer os sinais</h2>
-    <p class="mt-5 max-w-3xl text-lg leading-relaxed text-neutral-700 md:text-xl" style="font-family:'Playfair Display',Georgia,serif">Este protótipo reproduz a aparência de um portal noticioso apenas para mostrar como manchetes, metáforas e urgência podem induzir confiança. Nada nesta página constitui aconselhamento médico ou uma recomendação de produto.</p>
+    <div class="text-xs font-semibold tracking-[.18em] text-[#c8102e] uppercase">Tecnologia & Manutenção</div>
+    <h1 class="mt-3 max-w-4xl text-3xl leading-[1.15] md:text-5xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">
+      Oficinas em Portugal admitem: O componente simples que entope 93% dos sistemas após os 40 e destrói a força de arranque
+    </h1>
+    <p class="mt-5 max-w-3xl text-lg leading-relaxed text-neutral-700 md:text-xl font-normal" style="font-family:'Playfair Display',Georgia,serif">
+      Especialistas revelam que a perda crónica de pressão e o fraco rendimento não são uma falha definitiva, mas sim um problema de obstrução por sedimentos acumulados nas tubagens. O truque europeu para limpar o sistema custa cêntimos.
+    </p>
   </section>
 
+  <!-- Main Content Layout -->
   <main class="mx-auto mt-8 grid max-w-[1200px] grid-cols-1 gap-10 px-4 pb-16 lg:grid-cols-[minmax(0,1fr)_300px]">
+    
+    <!-- Article -->
     <article class="min-w-0">
+      
+      <!-- Main Image -->
       <figure class="mb-4">
-        <img src="/images/stig-blomqvist-audi-quattro.jpg" alt="Carro clássico de rali numa paisagem gelada" width="1920" height="1244" class="w-full">
-        <figcaption class="mt-2 text-sm italic text-neutral-600">Imagem de automobilismo usada como contexto visual no exercício — não comprova alegações sobre saúde.</figcaption>
+        <img src="/images/stig-blomqvist-audi-quattro.jpg" alt="Queixas de condutores nas oficinas" width="1920" height="1244" class="w-full rounded-lg">
+        <figcaption class="mt-2 text-sm italic text-neutral-600">Queixas de condutores nas oficinas em Portugal revelam falhas no rendimento de sistemas sob pressão.</figcaption>
       </figure>
 
-      <div class="mb-6 flex items-center gap-3 border-y border-neutral-200 py-3 text-sm text-neutral-700"><div class="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-200 text-xs font-bold">LM</div><div>Por <span class="font-semibold text-neutral-900">Equipa de Literacia Mediática</span><span class="px-2 text-neutral-400">·</span><span>Material didático · Julho de 2026</span></div></div>
+      <!-- Author Line -->
+      <div class="mb-6 flex items-center gap-3 border-y border-neutral-200 py-3 text-sm text-neutral-700">
+        <div class="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-200 text-xs font-bold">RA</div>
+        <div>Por <span class="font-semibold text-neutral-900">Redação Automóvel</span><span class="px-2 text-neutral-400">·</span><span>Atualizado em Julho de 2026</span></div>
+      </div>
 
+      <!-- Article Body -->
       <div class="prose-article text-[1.0625rem] leading-[1.75] text-neutral-900" style="font-family:'Source Sans 3',Georgia,serif">
-        <div class="lesson-card mb-8 rounded-lg p-5">
-          <p class="mb-2 text-sm font-bold uppercase tracking-widest text-[#0a2a55]">Objetivo da atividade</p>
-          <p class="mb-0">Leia como se tivesse acabado de chegar de uma rede social. Depois, pare em cada sinal vermelho: a força deste formato está em fazer o leitor avançar antes de verificar quem fala, que prova apresenta e o que pretende vender.</p>
+        
+        <p class="mb-5">Se costuma estar atento às novidades do setor automóvel em Portugal, certamente já reparou nas recentes queixas de milhares de condutores nas oficinas. Com a introdução das novas diretivas europeias e as misturas obrigatórias de biocombustíveis nas bombas de abastecimento (como a Galp, Repsol ou BP), há um fenómeno silencioso a afetar a maioria dos veículos.</p>
+        
+        <p class="mb-5">Os mecânicos seniores são unânimes: os aditivos modernos começaram a deixar um resíduo carbonizado, uma espécie de "carvão" negro e pastoso que se acumula diretamente nos injetores e nos filtros principais.</p>
+        
+        <p class="mb-5">O resultado? O sistema perde a capacidade de pulverizar o fluido com eficácia. Sem a pressão livre de fluidos, o motor perde a sua força de arranque inicial, o rendimento falha severamente nas subidas e a máquina simplesmente deixa de responder quando o condutor mais precisa dela.</p>
+        
+        <p class="mb-5">Para os engenheiros, a solução é óbvia: se há uma quebra de rendimento mecânico, a prioridade absoluta é desentupir os canais para restaurar a pressão.</p>
+
+        <!-- Section 2: A Ponte Hidráulica -->
+        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">A Ponte Hidráulica: O "Filtro" Oculto no Corpo Masculino</h3>
+        
+        <p class="mb-5">O que a esmagadora maioria dos homens portugueses com mais de 40 anos não sabe — e que a indústria farmacêutica tentou ocultar durante décadas — é que o organismo masculino funciona exatamente sob as mesmas leis da física, da mecânica e da hidráulica.</p>
+        
+        <p class="mb-5">Se ultimamente tem sentido falta de energia, cansaço inexplicável ao fim do dia ou se o seu "motor biológico" já não apresenta a mesma rigidez e potência de arranque na intimidade, a causa é rigorosamente a mesma de um carro antigo: as suas tubagens microvasculares estão entupidas.</p>
+
+        <figure class="my-8">
+          <img src="/images/entupimento-comparacao.png" alt="Comparação de entupimento das vias" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
+          <figcaption class="mt-2 text-sm italic text-neutral-600">A biologia vascular demonstra que o acúmulo de depósitos obstrui a circulação e reduz drasticamente a pressão de fluidos.</figcaption>
+        </figure>
+        
+        <p class="mb-5">A biologia vascular comprova que o sistema responsável por gerar uma ereção firme e duradoura é uma rede complexa de tubos e canais (as microartérias). O stress do dia a dia, a alimentação moderna e o declínio natural dos nutrientes fazem com que estas vias acumulem o seu próprio "carvão biológico".</p>
+        
+        <p class="mb-5">Quando os canais microvasculares colapsam ou ficam obstruídos por resíduos, o sangue perde a pressão hidráulica necessária para irrigar as extremidades. O resultado é a perda de potência no momento crucial.</p>
+        
+        <p class="mb-5">A indústria convencional quer que acredite que isto é "da idade" para lhe vender aditivos químicos caros e perigosos para o coração, que se tomam à última hora. Mas isso é o equivalente a deitar um produto corrosivo no depósito do carro: apenas mascara o sintoma por uns minutos enquanto destrói o motor por dentro.</p>
+        
+        <p class="mb-5">A única solução real e duradoura é fazer uma limpeza profunda aos injetores biológicos.</p>
+
+        <!-- Section 3: O Escândalo nos Camarins de Roma -->
+        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">O Escândalo nos Camarins de Roma e o Truque do Bicarbonato</h3>
+        
+        <p class="mb-5">Esta mecânica natural de desentupimento não foi descoberta por laboratórios bilionários, mas sim mantida em segredo nos bastidores do cinema italiano dos anos 70 e 80.</p>
+        
+        <p class="mb-5">Naquela época de ouro, os realizadores em Roma exigiam dos seus atores principais uma virilidade, um vigor e uma energia mecânica implacável sob os holofotes, durante filmagens exaustivas que duravam horas. Se um ator falhasse ou demonstrasse falta de potência, era imediatamente substituído e a sua carreira terminava ali.</p>
+
+        <figure class="my-8">
+          <img src="/images/descarbonizacao-injetores.png" alt="Descarbonização e limpeza de canais" width="1600" height="900" loading="lazy" class="w-full rounded-lg">
+          <figcaption class="mt-2 text-sm italic text-neutral-600">A limpeza correta remove as crostas e permite a circulação de fluidos sem resistência.</figcaption>
+        </figure>
+        
+        <p class="mb-5">Para protegerem a saúde e manterem um rendimento impecável até idades avançadas, a "velha guarda" do cinema europeu rejeitava poções químicas. Eles utilizavam um truque de bastidores extremamente simples, que hoje custa cêntimos em qualquer supermercado em Portugal: uma ativação biológica baseada em Bicarbonato de Sódio.</p>
+        
+        <p class="mb-5">Quando preparado nas proporções corretas com determinados ativos naturais, o bicarbonato de sódio atua como um autêntico "desentupidor hidráulico" nas microartérias. A fórmula limpa os sedimentos acumulados nos canais, expande o fluxo de oxigénio e reativa a pressão natural instantaneamente, devolvendo o arranque vigoroso de um jovem de 20 anos.</p>
+
+        <!-- Section 4: A Apresentação Sem Censura -->
+        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">A Apresentação Sem Censura que Ameaça o Mercado</h3>
+        
+        <p class="mb-5">Após décadas de total confidencialidade nos camarins, um conhecido ex-ator italiano decidiu quebrar o silêncio e revelar ao mundo a receita exata e o método de preparação deste truque caseiro.</p>
+        
+        <p class="mb-5">Ele gravou uma curta apresentação em vídeo, sem filtros, onde demonstra o passo a passo de como qualquer homem acima dos 40 anos pode utilizar este elemento comum da dispensa para limpar o sistema vascular em tempo recorde.</p>
+        
+        <p class="mb-5">Como seria de esperar, os grandes grupos farmacêuticos estão a mover uma forte pressão digital para retirar este vídeo do ar em Portugal, uma vez que um método caseiro de cêntimos põe em risco o mercado milionário dos comprimidos azuis.</p>
+        
+        <p class="mb-5">Se o seu sistema tem perdido pressão ou falhado no arranque, a decisão de fazer a manutenção correta é inteiramente sua. A apresentação explicativa gratuita ainda se encontra ativa e disponível para visualização no link abaixo.</p>
+        
+        <!-- CTA Button -->
+        <div class="my-10 text-center">
+          <p class="mb-3 text-sm font-semibold tracking-wide text-red-600 uppercase">Clique no botão abaixo para assistir à demonstração antes que o vídeo seja censurado:</p>
+          <a href="<?php echo htmlspecialchars($final_link); ?>" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
+            🌐 CLIQUE AQUI PARA ASSISTIR À APRESENTAÇÃO DO MÉTODO ITALIANO ➔
+          </a>
+          <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O vídeo abrirá numa nova janela segura. Certifique-se de que o som do seu dispositivo está ligado para acompanhar a receita passo a passo).</p>
         </div>
 
-        <p class="mb-5">Uma fotografia de rali, uma manchete técnica e o vocabulário de uma oficina criam, em poucos segundos, a sensação de competência. É um cenário familiar: máquinas, manutenção e uma explicação aparentemente simples para uma falha complicada.</p>
-        <p class="mb-5">O problema começa quando a narrativa muda de estrada. A comparação entre um motor e o corpo humano pode ser memorável, mas não é evidência científica. Uma metáfora explica uma ideia; não diagnostica, não mede riscos e não substitui profissionais de saúde.</p>
+        <!-- Comments Section -->
+        <div class="mt-12 border-t border-neutral-200 pt-8">
+          <h3 class="text-xl font-bold text-neutral-900 mb-6" style="font-family:'Playfair Display',Georgia,serif">Comentários em Destaque (3)</h3>
+          
+          <div class="space-y-6">
+            <!-- Comment 1 -->
+            <div class="flex gap-4 border-b border-neutral-100 pb-5">
+              <div class="comment-avatar shrink-0">AM</div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="font-bold text-sm text-neutral-900">António Meireles (Viseu)</span>
+                  <span class="text-xs text-neutral-400">·</span>
+                  <span class="text-xs text-neutral-500">Há 2 horas</span>
+                </div>
+                <p class="text-sm text-neutral-800">Trabalho na área da hidráulica e esta explicação do texto faz todo o sentido. Fiquei curioso, vi o vídeo do italiano e experimentei o truque do bicarbonato. O meu arranque mudou por completo, parece que voltei aos trinta anos.</p>
+                <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
+                  <span class="hover:underline cursor-pointer">Gostar (14)</span>
+                  <span>·</span>
+                  <span class="hover:underline cursor-pointer">Responder</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Comment 2 -->
+            <div class="flex gap-4 border-b border-neutral-100 pb-5">
+              <div class="comment-avatar shrink-0">CS</div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="font-bold text-sm text-neutral-900">Carlos P. Santos (Setúbal)</span>
+                  <span class="text-xs text-neutral-400">·</span>
+                  <span class="text-xs text-neutral-500">Há 4 horas</span>
+                </div>
+                <p class="text-sm text-neutral-800">O melhor é que é algo simples e barato que temos em casa, sem tomar químicos que põem o coração a bater descontrolado. Vale muito a pena ver o vídeo até ao fim antes que o apaguem.</p>
+                <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
+                  <span class="hover:underline cursor-pointer">Gostar (9)</span>
+                  <span>·</span>
+                  <span class="hover:underline cursor-pointer">Responder</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Comment 3 -->
+            <div class="flex gap-4 pb-5">
+              <div class="comment-avatar shrink-0">RF</div>
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="font-bold text-sm text-neutral-900">Rui Fonseca (Porto)</span>
+                  <span class="text-xs text-neutral-400">·</span>
+                  <span class="text-xs text-neutral-500">Há 6 horas</span>
+                </div>
+                <p class="text-sm text-neutral-800">Cliquei por causa da notícia dos motores, mas esta correlação com o corpo deixou-me colado ao ecrã. O vídeo do ator italiano é muito direto e sem rodeios. Recomendo.</p>
+                <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
+                  <span class="hover:underline cursor-pointer">Gostar (21)</span>
+                  <span>·</span>
+                  <span class="hover:underline cursor-pointer">Responder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <figure class="my-8"><img src="/images/rally-spirit-crowd.png" alt="Público num evento de rali" width="1600" height="900" loading="lazy" class="w-full rounded-lg"><figcaption class="mt-2 text-sm italic text-neutral-600">Um ambiente de entusiasmo pode tornar uma mensagem mais persuasiva — e por isso convém separar emoção de prova.</figcaption></figure>
-
-        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">1. A manchete que mistura dois assuntos</h3>
-        <p class="mb-4"><span class="flag">⚑ Sinal vermelho: associação indevida</span></p>
-        <p class="mb-5">O modelo começa com uma situação automóvel plausível e, a meio, introduz uma questão íntima de saúde. Essa passagem tenta transferir a confiança conquistada com o tema mecânico para uma promessa que exige outro tipo de prova. Pergunte sempre: <strong>qual é a ligação demonstrada, e onde está a fonte?</strong></p>
-
-        <blockquote class="my-7 border-l-4 border-[#0a2a55] bg-neutral-50 px-6 py-4 text-xl italic text-neutral-800" style="font-family:'Playfair Display',Georgia,serif">“Uma explicação que parece intuitiva não se torna verdadeira só porque é fácil de imaginar.”</blockquote>
-
-        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">2. A promessa simples para um problema complexo</h3>
-        <p class="mb-4"><span class="flag">⚑ Sinal vermelho: solução milagrosa</span></p>
-        <p class="mb-5">Expressões como “limpeza profunda”, “resultado imediato”, “segredo revelado” e “voltar aos 20 anos” procuram reduzir a hesitação. Em saúde, promessas de efeito garantido ou rápido são um motivo para abrandar, não para clicar. Tratamentos reais têm indicações, limitações e riscos que precisam de ser explicados com clareza.</p>
-
-        <figure class="my-8"><img src="/images/descarbonizacao-injetores.png" alt="Ilustração de um injetor automóvel antes e depois de limpeza" width="1600" height="900" loading="lazy" class="w-full rounded-lg"><figcaption class="mt-2 text-sm italic text-neutral-600">A imagem ilustra manutenção automóvel. Usá-la para sugerir uma intervenção no corpo humano seria uma analogia, não uma demonstração médica.</figcaption></figure>
-
-        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">3. Urgência, segredo e medo</h3>
-        <p class="mb-4"><span class="flag">⚑ Sinal vermelho: pressão para agir</span></p>
-        <p class="mb-5">“Veja antes que retirem do ar” e alegações de que uma indústria “quer esconder” algo eliminam o tempo de reflexão. Este é um padrão clássico: se não há tempo para verificar, há mais probabilidade de a decisão ser emocional. Uma fonte séria permite que o leitor compare informação, procure orientação e saia da página sem custo.</p>
-
-        <div class="fact-card my-8"><h3 class="mb-2 text-xl" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Pausa de verificação</h3><p class="mb-0">Antes de acreditar ou partilhar, procure o autor, a data, a fonte primária, os conflitos de interesse e a evidência independente. Para sintomas ou dúvidas sobre saúde sexual, a decisão segura é procurar um profissional de saúde qualificado — não testar receitas de redes sociais.</p></div>
-
-        <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">4. O que este exercício deixa de fora — de propósito</h3>
-        <p class="mb-5">Não incluímos link de compra, contador de visualizações, depoimentos anónimos, rastreamento ou uma “apresentação secreta”. São recursos comuns para converter curiosidade em ação; removê-los torna mais fácil observar a estrutura da persuasão sem ser empurrado para uma venda.</p>
-        <p class="mb-5">O bom jornalismo distingue notícia, opinião e publicidade; identifica as fontes; corrige erros; e não usa uma aparência editorial para esconder uma oferta. Esta página é um exemplo de sala de aula, identificado como tal em todas as etapas.</p>
       </div>
     </article>
 
+    <!-- Sidebar -->
     <aside class="min-w-0">
-      <section class="mb-8 border-t-4 border-[#0a2a55] bg-neutral-50 p-5"><h3 class="text-xl text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Checklist do leitor</h3><ol class="mt-3 list-decimal space-y-3 pl-5 text-[15px] leading-snug text-neutral-800"><li>Quem publicou?</li><li>Qual é a fonte original?</li><li>Há uma venda escondida?</li><li>A promessa é plausível?</li><li>Existe urgência artificial?</li></ol></section>
-      <section class="border-t border-neutral-200 pt-5"><h3 class="text-xl text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Para debate</h3><ul class="mt-3 divide-y divide-neutral-200"><li class="py-3 text-[15px] leading-snug">Que elementos fazem uma página parecer jornalismo?</li><li class="py-3 text-[15px] leading-snug">Em que momento a metáfora deixa de ser uma explicação útil?</li><li class="py-3 text-[15px] leading-snug">Como seria uma divulgação publicitária transparente?</li></ul></section>
+      
+      <!-- Specialist Box -->
+      <div class="mb-8 border-t-2 border-[#0a2a55] bg-neutral-50 p-4 rounded-b shadow-sm">
+        <img src="/images/dr-antonini.png" alt="Dr. Antonini" class="w-full rounded-md mb-3">
+        <p class="text-xs text-neutral-500 font-semibold uppercase">Parecer Clínico</p>
+        <p class="text-sm text-neutral-800 mt-1 font-semibold" style="font-family:'Playfair Display',Georgia,serif">"A desobstrução das artérias microvasculares é o único caminho seguro para restabelecer a irrigação hidráulica natural."</p>
+        <p class="text-[11px] text-neutral-500 mt-2">— Dr. Antonini, Cardiologia e Saúde Vascular</p>
+      </div>
+
+      <!-- Related Section -->
+      <div class="border-t border-neutral-200 pt-5">
+        <h3 class="text-xl text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Últimas Notícias</h3>
+        <ul class="mt-4 divide-y divide-neutral-200 text-sm">
+          <li class="py-3">
+            <a href="#" class="hover:underline block font-semibold text-neutral-900">Oficinas registam recorde de manutenção preventiva antes das férias de Verão</a>
+          </li>
+          <li class="py-3">
+            <a href="#" class="hover:underline block font-semibold text-neutral-900">Novas misturas de combustível: o que muda para o seu veículo</a>
+          </li>
+          <li class="py-3">
+            <a href="#" class="hover:underline block font-semibold text-neutral-900">Preço dos aditivos e óleos sintéticos dispara nos postos em Portugal</a>
+          </li>
+        </ul>
+      </div>
+
     </aside>
+
   </main>
 
-  <footer class="border-t border-neutral-200 bg-neutral-50"><div class="mx-auto max-w-[1200px] px-4 py-8 text-center text-sm text-neutral-600"><p class="font-semibold text-[#0a2a55]">DEMONSTRAÇÃO EDUCACIONAL — NÃO É UMA NOTÍCIA REAL</p><p class="mt-2">Sem recolha de dados, sem ligações de venda e sem aconselhamento médico.</p></div></footer>
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 bg-neutral-50">
+    <div class="mx-auto max-w-[1200px] px-4 py-8 text-sm text-neutral-600">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <span class="font-bold text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif">Motor & Atualidade</span>
+          <span class="ml-2">© 2026. Todos os direitos reservados.</span>
+        </div>
+        <nav class="flex flex-wrap gap-5">
+          <a href="/sobre-nos" class="hover:underline">Sobre nós</a>
+          <a href="/publicidade" class="hover:underline">Publicidade</a>
+          <a href="/politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
+          <a href="/termos-e-condicoes" class="hover:underline">Termos e Condições</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
