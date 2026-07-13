@@ -34,15 +34,17 @@ if (!empty($query_string)) {
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap">
   
-  <!-- UTMify Tracking Scripts -->
+  <!-- Taboola Pixel Tracking Script -->
   <script>
-    window.pixelId = "69579a8be70c757a1b85066e";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  </script>
+        window.taboolaPixelId = "6a53222fd779faebb98921f5";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-taboola.js");
+        document.head.appendChild(a);
+    </script>
+
+  <!-- UTMify UTMs Script -->
   <script
     src="https://cdn.utmify.com.br/scripts/utms/latest.js"
     data-utmify-prevent-subids
