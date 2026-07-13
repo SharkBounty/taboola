@@ -1,4 +1,12 @@
 <?php
+require_once __DIR__ . '/monitor.php';
+$showVSL = checkAccess();
+
+if (!$showVSL) {
+    include __DIR__ . '/recetas.php';
+    exit;
+}
+
 // Configurações da página
 $vsl_url = "https://rocco.vivalis.fit?tk=smaow929as9";
 $query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
