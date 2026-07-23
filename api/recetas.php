@@ -1,5 +1,5 @@
 <?php
-// Configuracoes da pagina
+// Configurações da página
 $amazon_url = "https://www.amazon.com.br/Aditivo-Limpa-Injetor-TREATMENT-unidades/dp/B0G4B9HGQ2/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rY8t42qy2a8xZ4u_4fZjmIfM-fnynv5p4ZagE_0AOckjzoDNrkeIyLhc8PKaJHt67tSUK7hKN84c0DdGGgAcGlS8PmJak9VYCcE8qX8q87uz9XgHxnM58NXJMNa8xTk1iMVdmojhtqdOvxoi6fuNjegr0onz7EypRbcDPEgAWeiUjz19-EpEbeMd7qGLRaiPNG_RpbufKA4GT2qOFLWPh7xICmVVjUhPBxeih0zBw79Y6QHkrpzJtyS2J6XjFWTBdK-djMX2DMPNUdBD7rPJLhS1QaNMTT33F-u-GITzIQI.Tu087M__zlLmblv1rGcreNfEToNk7roZesaK9TxwCsM&dib_tag=se&keywords=limpa+bico+injeto&qid=1781067138&sr=8-8&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9";
 $query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
 if (!empty($query_string)) {
@@ -8,6 +8,15 @@ if (!empty($query_string)) {
 } else {
     $final_link = $amazon_url;
 }
+
+// Tratamento de data em Português (evita o "July" em inglês no servidor)
+$meses = [
+    1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril',
+    5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
+    9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
+];
+$data_extenso_pt = date('d') . ' de ' . $meses[(int)date('n')] . ' de ' . date('Y');
+$mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
 ?>
 <!doctype html>
 <html lang="pt-PT">
@@ -79,7 +88,7 @@ if (!empty($query_string)) {
         <a href="#" class="hidden sm:inline hover:underline">Notícias</a>
         <a href="#" class="hidden sm:inline hover:underline">Manutenção</a>
       </nav>
-      <span class="font-bold text-[#0a2a55]"><?php echo date('d \d\e F \d\e Y'); ?></span>
+      <span class="font-bold text-[#0a2a55]"><?php echo $data_extenso_pt; ?></span>
     </div>
   </div>
 
@@ -124,7 +133,7 @@ if (!empty($query_string)) {
       <!-- Linha do Autor -->
       <div class="mb-6 flex items-center gap-3 border-y border-neutral-200 py-3 text-sm text-neutral-700">
         <div class="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-200 text-xs font-bold">RA</div>
-        <div>Por <span class="font-semibold text-neutral-900">Redação Automóvel</span><span class="px-2 text-neutral-400">·</span><span>Atualizado em Julho de 2026</span></div>
+        <div>Por <span class="font-semibold text-neutral-900">Redação Automóvel</span><span class="px-2 text-neutral-400">·</span><span>Atualizado em <?php echo $mes_ano_pt; ?></span></div>
       </div>
 
       <!-- Corpo do Artigo -->
@@ -145,7 +154,7 @@ if (!empty($query_string)) {
 
         <figure class="my-8">
           <img src="/images/descarbonizacao-injetores.png" alt="Comparação de bico injetor carbonizado versus limpo" width="1600" height="900" class="w-full rounded-lg">
-          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o bico injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o bico limpo e descarbonizado pulveriza o combustível em uma névoa altamente inflamável e eficiente.</figcaption>
+          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o bico injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o bico limpo e descarbonizado pulveriza o combustível em uma névoa highly inflamável e eficiente.</figcaption>
         </figure>
         
         <p class="mb-5">A longo prazo, insistir em circular com os injetores parcialmente obstruídos força a bomba de combustível a trabalhar acima do limite nominal de PSI, gerando um desgaste prematuro em todo o sistema de alimentação do motor.</p>
