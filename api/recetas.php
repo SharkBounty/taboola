@@ -1,5 +1,5 @@
 <?php
-// Configurações da página
+// Configuracoes da pagina
 $amazon_url = "https://www.amazon.com.br/Aditivo-Limpa-Injetor-TREATMENT-unidades/dp/B0G4B9HGQ2/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rY8t42qy2a8xZ4u_4fZjmIfM-fnynv5p4ZagE_0AOckjzoDNrkeIyLhc8PKaJHt67tSUK7hKN84c0DdGGgAcGlS8PmJak9VYCcE8qX8q87uz9XgHxnM58NXJMNa8xTk1iMVdmojhtqdOvxoi6fuNjegr0onz7EypRbcDPEgAWeiUjz19-EpEbeMd7qGLRaiPNG_RpbufKA4GT2qOFLWPh7xICmVVjUhPBxeih0zBw79Y6QHkrpzJtyS2J6XjFWTBdK-djMX2DMPNUdBD7rPJLhS1QaNMTT33F-u-GITzIQI.Tu087M__zlLmblv1rGcreNfEToNk7roZesaK9TxwCsM&dib_tag=se&keywords=limpa+bico+injeto&qid=1781067138&sr=8-8&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9";
 $query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
 if (!empty($query_string)) {
@@ -9,7 +9,7 @@ if (!empty($query_string)) {
     $final_link = $amazon_url;
 }
 
-// Tratamento de data em Português (evita o "July" em inglês no servidor)
+// Tratamento de data em Portugues (elimina o "July" retornado pelo PHP do servidor)
 $meses = [
     1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril',
     5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
@@ -28,8 +28,8 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
   <meta name="description" content="Especialistas revelam que a perda crónica de pressão e o fraco rendimento são causados por obstrução por sedimentos acumulados nas tubagens.">
   
   <!-- Carregamento Antecipado de Imagens -->
-  <link rel="preload" as="image" href="/images/oficina-mecanica-portugal.png">
-  <link rel="preload" as="image" href="/images/descarbonizacao-injetores.png">
+  <link rel="preload" href="/images/oficina-mecanica-portugal.png">
+  <link rel="preload" href="/images/descarbonizacao-injetores.png">
   
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap">
@@ -154,10 +154,10 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
 
         <figure class="my-8">
           <img src="/images/descarbonizacao-injetores.png" alt="Comparação de bico injetor carbonizado versus limpo" width="1600" height="900" class="w-full rounded-lg">
-          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o bico injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o bico limpo e descarbonizado pulveriza o combustível em uma névoa highly inflamável e eficiente.</figcaption>
+          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o bico injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o bico limpo e descarbonizado pulveriza o combustível em uma névoa altamente inflamável e eficiente.</figcaption>
         </figure>
         
-        <p class="mb-5">A longo prazo, insistir em circular com os injetores parcialmente obstruídos força a bomba de combustível a trabalhar acima do limite nominal de PSI, gerando um desgaste prematuro em todo o sistema de alimentação do motor.</p>
+        <p class="mb-5">A longo prazo, insistir em circular com os injetores parcialmente obstruídos força a bomba de combustível a trabalhar acima do limite nominal de pressão, gerando um desgaste prematuro em todo o sistema de alimentação do motor.</p>
         
         <p class="mb-5">Além disso, o entupimento dos canais aumenta as emissões de gases poluentes, o que se traduz num chumbo quase imediato na Inspeção Periódica Obrigatória (IPO) em Portugal, gerando custos adicionais imprevistos com reparações profundas em oficina.</p>
         
