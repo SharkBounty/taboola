@@ -270,22 +270,35 @@ if (!empty($query_string)) {
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-neutral-200 bg-neutral-50">
-    <div class="mx-auto max-w-[1200px] px-4 py-8 text-sm text-neutral-600">
-      <div class="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <span class="font-bold text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif">Motor & Atualidade</span>
-          <span class="ml-2">© 2026. Todos os direitos reservados.</span>
-        </div>
-        <nav class="flex flex-wrap gap-5">
-          <a href="/sobre-nos" class="hover:underline">Sobre nós</a>
-          <a href="/publicidade" class="hover:underline">Publicidade</a>
-          <a href="/politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
-          <a href="/termos-e-condicoes" class="hover:underline">Termos e Condições</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
+ <footer class="border-t border-neutral-200 bg-neutral-50">
+            <div class="mx-auto max-w-[1200px] px-4 py-8 text-sm text-neutral-600">
+            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-neutral-200 pb-6">
+                <div>
+                <span class="font-bold text-[#0a2a55]" style="font-family:'Playfair Display',Georgia,serif">Motor & Atualidade</span>
+                <span class="ml-2">© 2026. Todos os direitos reservados.</span>
+                </div>
+                <nav class="flex flex-wrap gap-5">
+                <a href="/sobre-nos" class="hover:underline">Sobre nós</a>
+                <a href="/publicidade" class="hover:underline">Publicidade</a>
+                <a href="/politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
+                <a href="/termos-e-condicoes" class="hover:underline">Termos e Condições</a>
+                <a href="/contacto" class="hover:underline">Contacto</a>
+                </nav>
+            </div>
+
+            <!-- DETALHES DE LICENCIAMENTO E IDENTIFICAÇÃO EXIGIDOS PELO TABOOLA -->
+            <div class="mt-6 text-xs text-neutral-500 leading-relaxed">
+                <p class="font-semibold text-neutral-700 mb-1">61.790.719 Mateus Freire Roberto</p>
+                <p><strong>CNPJ:</strong> 61.790.719/0001-68</p>
+                <p><strong>Inscrição Estadual (SP):</strong> 181.680.675.111</p>
+                <p><strong>Endereço Comercial:</strong> Avenida São Paulo, 909, Casa 07 - Centro, Araraquara/SP - CEP 14801-060</p>
+                <p><strong>Atendimento ao Cliente / Contacto:</strong> contato@motoratualidade.com</p>
+                <p class="mt-3 text-[11px] text-neutral-400">
+                Aviso Legal: Os resultados dos produtos exibidos podem variar de acordo com o veículo e as condições de uso. As marcas citadas pertencem aos seus respetivos proprietários.
+                </p>
+            </div>
+            </div>
+        </footer>
 
 </body>
 </html>
