@@ -9,7 +9,7 @@ if (!empty($query_string)) {
     $final_link = $amazon_url;
 }
 
-// Tratamento de data em Portugues (elimina o "July" retornado pelo PHP do servidor)
+// Tratamento de data em Portugues
 $meses = [
     1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril',
     5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
@@ -19,7 +19,7 @@ $data_extenso_pt = date('d') . ' de ' . $meses[(int)date('n')] . ' de ' . date('
 $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
 ?>
 <!doctype html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,13 +28,13 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
   <meta name="description" content="Especialistas revelam que a perda crónica de pressão e o fraco rendimento são causados por obstrução por sedimentos acumulados nas tubagens.">
   
   <!-- Carregamento Antecipado de Imagens -->
-  <link rel="preload" href="/images/oficina-mecanica-portugal.png">
-  <link rel="preload" href="/images/descarbonizacao-injetores.png">
+  <link rel="preload" href="/images/oficina-mecanica-portugal.png" as="image">
+  <link rel="preload" href="/images/descarbonizacao-injetores.png" as="image">
   
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Sans+3:wght@400;600;700&display=swap">
   
-  <!-- Codigo de Rastreamento Taboola Pixel -->
+  <!-- Codigo de Rastreamento Taboola -->
   <script>
         window.taboolaPixelId = "6a53222fd779faebb98921f5";
         var a = document.createElement("script");
@@ -44,7 +44,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         document.head.appendChild(a);
   </script>
 
-  <!-- Codigo de UTMs UTMify -->
+  <!-- Codigo de Rastreamento UTMify -->
   <script
     src="https://cdn.utmify.com.br/scripts/utms/latest.js"
     data-utmify-prevent-subids
@@ -179,9 +179,9 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         <!-- Botao CTA -->
         <div class="my-10 text-center">
           <a href="<?php echo htmlspecialchars($final_link); ?>" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
-            🛒 VER DISPONIBILIDADE DO TOP CLEAN FLEX NA AMAZON ➔
+            🛒 VER DISPONIBILIDADE DO TOP CLEAN FLEX NA LOJA OFICIAL ➔
           </a>
-          <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O link redirecionará diretamente para a página do produto na Amazon com garantia de envio seguro e suporte ao cliente).</p>
+          <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O hiperlink encaminhará diretamente para a página do produto com garantia de envio seguro e suporte ao cliente).</p>
         </div>
 
         <!-- Secao de Comentarios -->
@@ -216,7 +216,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 4 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Com o preço do combustível atual, se não cuidarmos dos injetores o consumo dispara. Comprei o Top Clean pela Amazon e chegou super rápido. Recomendo.</p>
+                <p class="text-sm text-neutral-800">Com o preço do combustível atual, se não cuidarmos dos injetores o consumo dispara. Comprei o Top Clean pela loja oficial e chegou super rápido. Recomendo.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (9)</span>
                   <span>·</span>
@@ -300,7 +300,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         <p><strong>CNPJ:</strong> 61.790.719/0001-68</p>
         <p><strong>Inscrição Estadual (SP):</strong> 181.680.675.111</p>
         <p><strong>Endereço Comercial:</strong> Avenida São Paulo, 909, Casa 07 - Centro, Araraquara/SP - CEP 14801-060</p>
-        <p><strong>Atendimento ao Cliente / Contacto:</strong> contato@motoratualidade.com</p>
+        <p><strong>Atendimento ao Cliente / Contacto:</strong> contacto@motoratualidade.com</p>
         <p class="mt-3 text-[11px] text-neutral-400">
           Aviso Legal: Os resultados dos produtos exibidos podem variar de acordo com o veículo e as condições de uso. As marcas citadas pertencem aos seus respetivos proprietários.
         </p>
