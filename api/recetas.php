@@ -1,25 +1,5 @@
-<?php
-// Configuracoes da pagina
-$amazon_url = "https://www.amazon.com.br/Aditivo-Limpa-Injetor-TREATMENT-unidades/dp/B0G4B9HGQ2/ref=sr_1_8?dib=eyJ2IjoiMSJ9.rY8t42qy2a8xZ4u_4fZjmIfM-fnynv5p4ZagE_0AOckjzoDNrkeIyLhc8PKaJHt67tSUK7hKN84c0DdGGgAcGlS8PmJak9VYCcE8qX8q87uz9XgHxnM58NXJMNa8xTk1iMVdmojhtqdOvxoi6fuNjegr0onz7EypRbcDPEgAWeiUjz19-EpEbeMd7qGLRaiPNG_RpbufKA4GT2qOFLWPh7xICmVVjUhPBxeih0zBw79Y6QHkrpzJtyS2J6XjFWTBdK-djMX2DMPNUdBD7rPJLhS1QaNMTT33F-u-GITzIQI.Tu087M__zlLmblv1rGcreNfEToNk7roZesaK9TxwCsM&dib_tag=se&keywords=limpa+bico+injeto&qid=1781067138&sr=8-8&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9";
-$query_string = !empty($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : '';
-if (!empty($query_string)) {
-    $separator = (strpos($amazon_url, '?') !== false) ? '&' : '?';
-    $final_link = $amazon_url . $separator . $query_string;
-} else {
-    $final_link = $amazon_url;
-}
-
-// Tratamento de data em Portugues
-$meses = [
-    1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril',
-    5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
-    9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
-];
-$data_extenso_pt = date('d') . ' de ' . $meses[(int)date('n')] . ' de ' . date('Y');
-$mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
-?>
 <!doctype html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +23,6 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-taboola.js");
         document.head.appendChild(a);
   </script>
-
   <!-- Codigo de Rastreamento UTMify -->
   <script
     src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -88,7 +67,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         <a href="#" class="hidden sm:inline hover:underline">Notícias</a>
         <a href="#" class="hidden sm:inline hover:underline">Manutenção</a>
       </nav>
-      <span class="font-bold text-[#0a2a55]"><?php echo $data_extenso_pt; ?></span>
+      <span class="font-bold text-[#0a2a55]">28 de Julho de 2026</span>
     </div>
   </div>
 
@@ -133,7 +112,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
       <!-- Linha do Autor -->
       <div class="mb-6 flex items-center gap-3 border-y border-neutral-200 py-3 text-sm text-neutral-700">
         <div class="flex h-9 w-9 items-center justify-center rounded-full bg-neutral-200 text-xs font-bold">RA</div>
-        <div>Por <span class="font-semibold text-neutral-900">Redação Automóvel</span><span class="px-2 text-neutral-400">·</span><span>Atualizado em <?php echo $mes_ano_pt; ?></span></div>
+        <div>Por <span class="font-semibold text-neutral-900">Redação Automóvel</span><span class="px-2 text-neutral-400">·</span><span>Atualizado em Julho de 2026</span></div>
       </div>
 
       <!-- Corpo do Artigo -->
@@ -150,38 +129,39 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
         <!-- Secao 2: O Impacto Tecnico -->
         <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">O Impacto Técnico do Carvão nos Injetores Modificará o Consumo</h3>
         
-        <p class="mb-5">Quando o bico injetor acumula resíduos de carbono na sua agulha interna, a pulverização do combustível deixa de ser uma névoa homogénea e passa a ser um jato irregular. Isto quebra o rácio estequiométrico ideal dentro da câmara de combustão.</p>
+        <p class="mb-5">Quando o injetor acumula resíduos de carbono na sua agulha interna, a pulverização do combustível deixa de ser uma névoa homogénea e passa a ser um jato irregular. Isto quebra o rácio estequiométrico ideal dentro da câmara de combustão.</p>
 
         <figure class="my-8">
-          <img src="/images/descarbonizacao-injetores.png" alt="Comparação de bico injetor carbonizado versus limpo" width="1600" height="900" class="w-full rounded-lg">
-          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o bico injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o bico limpo e descarbonizado pulveriza o combustível em uma névoa altamente inflamável e eficiente.</figcaption>
+          <img src="/images/descarbonizacao-injetores.png" alt="Comparação de injetor carbonizado versus limpo" width="1600" height="900" class="w-full rounded-lg">
+          <figcaption class="mt-2 text-sm italic text-neutral-600">À esquerda: o injetor entupido por crostas de carbono obstrui a pulverização e causa falhas de potência. À direita: o injetor limpo e descarbonizado pulveriza o combustível numa névoa altamente inflamável e eficiente.</figcaption>
         </figure>
-        
+
         <p class="mb-5">A longo prazo, insistir em circular com os injetores parcialmente obstruídos força a bomba de combustível a trabalhar acima do limite nominal de pressão, gerando um desgaste prematuro em todo o sistema de alimentação do motor.</p>
         
         <p class="mb-5">Além disso, o entupimento dos canais aumenta as emissões de gases poluentes, o que se traduz num chumbo quase imediato na Inspeção Periódica Obrigatória (IPO) em Portugal, gerando custos adicionais imprevistos com reparações profundas em oficina.</p>
-        
+
         <!-- Secao 3: Manutencao Preventiva -->
         <h3 class="mb-3 mt-10 text-2xl text-[#0d0d0d]" style="font-family:'Playfair Display',Georgia,serif;font-weight:800">Como Fazer a Manutenção Preventiva em Casa Sem Gastar Centenas de Euros</h3>
         
         <p class="mb-5">Muitas oficinas mecânicas cobram valores exorbitantes pela desmontagem completa do sistema e limpeza por ultrassons. No entanto, os engenheiros do setor revelam que o segredo para manter as tubagens desentupidas e a pressão no máximo passa pela utilização preventiva de aditivos químicos descarbonizantes de alta concentração.</p>
         
-        <p class="mb-5">Este "truque", que custa muito pouco, dissolve quimicamente as micropartículas de carvão negro antes que elas solidifiquem nos bicos injetores, expelindo os resíduos diretamente pelo sistema de escape de forma segura.</p>
+        <p class="mb-5">Este "truque", que custa muito pouco, dissolve quimicamente as micropartículas de carvão negro antes que elas solidifiquem nos injetores, expelindo os resíduos diretamente pelo sistema de escape de forma segura.</p>
         
         <p class="mb-5">Especialistas em mecânica automóvel recomendam a aplicação de um frasco de limpeza a cada 5.000 ou 10.000 quilómetros rodados para garantir que o arranque do veículo se mantém instantâneo e livre de falhas.</p>
         
-        <p class="mb-5">Uma das soluções mais elogiadas no mercado pela sua rapidez em restaurar o fluxo de pressão original é o <strong>Top Clean Flex Limpeza de Bico Injetor e Carburador (250ml)</strong>.</p>
+        <p class="mb-5">Uma das soluções mais elogiadas no mercado europeu pela sua rapidez em restaurar o fluxo de pressão original é o <strong>Top Clean Flex - Limpeza de Injetores (250ml)</strong>.</p>
         
         <p class="mb-5">Se o seu motor tem demonstrado engasgos, perda de rendimento nas subidas ou falta de força no arranque, a solução pode passar por esta aplicação simples diretamente no depósito de combustível.</p>
         
-        <p class="mb-5">Para verificar os detalhes técnicos, preços e a disponibilidade de entrega imediata em Portugal, consulte o link oficial abaixo:</p>
+        <p class="mb-5">Para verificar os detalhes técnicos, preços em Euros (€) e a disponibilidade de entrega imediata em Portugal, consulte a página oficial de distribuição abaixo:</p>
 
         <!-- Botao CTA -->
         <div class="my-10 text-center">
-          <a href="<?php echo htmlspecialchars($final_link); ?>" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
-            🛒 VER DISPONIBILIDADE DO TOP CLEAN FLEX NA LOJA OFICIAL ➔
+          <!-- ATENÇÃO: Substitua o atributo href pelo seu link direcionado à Europa/Portugal (Ex: Amazon.es ou e-commerce com entrega em Portugal) -->
+          <a href="https://www.amazon.es/dp/B0G4B9HGQ2" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
+            🛒 VER DISPONIBILIDADE E PREÇOS EM EUROS (€) ➔
           </a>
-          <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O hiperlink encaminhará diretamente para a página do produto com garantia de envio seguro e suporte ao cliente).</p>
+          <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O hiperlink encaminhará diretamente para a página do produto com garantia de envio seguro para Portugal e suporte ao cliente).</p>
         </div>
 
         <!-- Secao de Comentarios -->
@@ -198,7 +178,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 2 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Uso sempre este tipo de aditivo e limpa mesmo os bicos. O carro deixa de falhar nas subidas e o arranque fica muito mais leve. Vale a pena a prevenção.</p>
+                <p class="text-sm text-neutral-800">Uso sempre este tipo de aditivo e limpa mesmo os injetores. O carro deixa de falhar nas subidas e o arranque fica muito mais leve. Vale a pena a prevenção.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (14)</span>
                   <span>·</span>
@@ -216,7 +196,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 4 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Com o preço do combustível atual, se não cuidarmos dos injetores o consumo dispara. Comprei o Top Clean pela loja oficial e chegou super rápido. Recomendo.</p>
+                <p class="text-sm text-neutral-800">Com o preço do combustível atual, se não cuidarmos dos injetores o consumo dispara. Comprei o produto recomendado para entrega em Portugal e chegou super rápido. Recomendo.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (9)</span>
                   <span>·</span>
@@ -234,7 +214,7 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
                   <span class="text-xs text-neutral-400">·</span>
                   <span class="text-xs text-neutral-500">Há 6 horas</span>
                 </div>
-                <p class="text-sm text-neutral-800">Excelente artigo explicativo. O acúmulo de carvão é o maior inimigo dos motores modernos em Portugal. Vou mandar vir um frasco para fazer a manutenção este fim de semana.</p>
+                <p class="text-sm text-neutral-800">Excelente artigo explicativo. O acúmulo de carvão é o maior inimigo dos motores modernos em Portugal. Vou encomendar um frasco para fazer a manutenção este fim de semana.</p>
                 <div class="mt-2 flex items-center gap-4 text-xs text-neutral-500">
                   <span class="hover:underline cursor-pointer">Gostar (21)</span>
                   <span>·</span>
@@ -273,7 +253,6 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
           </li>
         </ul>
       </div>
-
     </aside>
 
   </main>
@@ -296,10 +275,11 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
       </div>
 
       <div class="mt-6 text-xs text-neutral-500 leading-relaxed">
-        <p class="font-semibold text-neutral-700 mb-1">61.790.719 Mateus Freire Roberto</p>
+        <p class="font-semibold text-neutral-700 mb-1">Empresa Responsável / Operação Internacional:</p>
+        <p><strong>Razão Social:</strong> 61.790.719 Mateus Freire Roberto</p>
         <p><strong>CNPJ:</strong> 61.790.719/0001-68</p>
-        <p><strong>Inscrição Estadual (SP):</strong> 181.680.675.111</p>
-        <p><strong>Endereço Comercial:</strong> Avenida São Paulo, 909, Casa 07 - Centro, Araraquara/SP - CEP 14801-060</p>
+        <p><strong>Sede Comercial:</strong> Avenida São Paulo, 909, Casa 07 - Centro, Araraquara/SP - CEP 14801-060, Brasil</p>
+        <p><strong>Aviso de Distribuição:</strong> Conteúdo informativo direcionado ao público europeu (Portugal). Os links de compras direcionam para plataformas parceiras com envio e taxas locais devidamente ajustadas para a União Europeia.</p>
         <p><strong>Atendimento ao Cliente / Contacto:</strong> contacto@motoratualidade.com</p>
         <p class="mt-3 text-[11px] text-neutral-400">
           Aviso Legal: Os resultados dos produtos exibidos podem variar de acordo com o veículo e as condições de uso. As marcas citadas pertencem aos seus respetivos proprietários.
@@ -307,6 +287,5 @@ $mes_ano_pt = $meses[(int)date('n')] . ' de ' . date('Y');
       </div>
     </div>
   </footer>
-
 </body>
 </html>
