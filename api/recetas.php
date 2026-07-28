@@ -158,7 +158,7 @@
         <!-- Botao CTA -->
         <div class="my-10 text-center">
           <!-- ATENÇÃO: Substitua o atributo href pelo seu link direcionado à Europa/Portugal (Ex: Amazon.es ou e-commerce com entrega em Portugal) -->
-          <a href="https://www.amazon.es/dp/B0G4B9HGQ2" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
+          <a href="https://www.amazon.es/-/pt/dp/B09J6D2CNZ/ref=sr_1_1?crid=1BZE46YMANZ1G&dib=eyJ2IjoiMSJ9.oV8K5cV-Zsaj2l5FCrzuizngpcwrlpvilOEA9UtN9aayGj_rlJxZxGby_YPirT9lG7gWGfT3xBfxj-_OfFU5nI2xaQQlMrzSGIcqoP3jr2Iusi18UUA6cq49GwI3ulKXRY3Mn-klkj1CXBEVWb5gKRnje7NTcfcKpmZW5nX1GAvE8NEwr5loKYpf16dxBfmIsZXC83wi3qPz5FZRtD9zY0YtUltAHVcQscWtebeppRDaHE6yaclHK7AzOzqgPijybKtqTOHWCJsd9C3N3RMJ21-zc6FFAf5Ya8Qjbq0iLJo.jBfe1rRRGVfKBteDBRF6edeusPSxnIPclN1bBkkBoDA&dib_tag=se&keywords=inyector%2Bcleaner&qid=1785208681&s=automotive&sprefix=inyector%2Bclean%2Cautomotive%2C348&sr=1-1&th=1" target="_blank" rel="noopener noreferrer" class="cta-btn inline-block rounded-md bg-[#c8102e] px-8 py-4 text-base font-bold uppercase tracking-wide text-white transition hover:bg-[#a40d26] md:text-xl">
             🛒 VER DISPONIBILIDADE E PREÇOS EM EUROS (€) ➔
           </a>
           <p class="mt-4 text-xs text-neutral-500 font-medium">(Nota: O hiperlink encaminhará diretamente para a página do produto com garantia de envio seguro para Portugal e suporte ao cliente).</p>
