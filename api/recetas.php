@@ -149,7 +149,7 @@
         
         <p class="mb-5">Especialistas em mecânica automóvel recomendam a aplicação de um frasco de limpeza a cada 5.000 ou 10.000 quilómetros rodados para garantir que o arranque do veículo se mantém instantâneo e livre de falhas.</p>
         
-        <p class="mb-5">Uma das soluções mais elogiadas no mercado europeu pela sua rapidez em restaurar o fluxo de pressão original é o <strong>Top Clean Flex - Limpeza de Injetores (250ml)</strong>.</p>
+        <p class="mb-5">Uma das soluções mais elogiadas no mercado europeu pela sua rapidez em restaurar o fluxo de pressão original é o <strong>MOTUL Limpador de injetores - Limpeza de Injetores (300ml)</strong>.</p>
         
         <p class="mb-5">Se o seu motor tem demonstrado engasgos, perda de rendimento nas subidas ou falta de força no arranque, a solução pode passar por esta aplicação simples diretamente no depósito de combustível.</p>
         
